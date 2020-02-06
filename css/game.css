@@ -1,0 +1,196 @@
+.wrap {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    max-width: 88%;
+    background-color: #FFEEDB;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #AB9B96;
+    box-shadow: 5px 10px 18px #2C2626;
+    border-radius: 5px;
+    position: relative;
+    min-height: 93%;
+    padding-top: 20px;
+}
+body {
+    background-color: #61C9A8;
+}
+UL.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+UL.navigation LI {
+    display: inline;
+}
+
+UL.navigation LI A {
+    padding: 3px 5px;
+    background-color: #000000;
+    color: #FDFDFD;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+UL.navigation LI A.selected{
+    background-color: black;
+    color: #ED9B40;
+}
+UL.navigation LI A:hover {
+    background-color: #C2C2C2;
+    color: #000000;
+    padding: 7px 5px;
+}
+
+UL.navigation LI A:focus {
+    outline: 0;
+}
+.center {
+    text-align: center;
+}
+#title {
+    color: #000000;
+    font-size: 27px;
+}
+.lefttic {
+    border-left: 2px;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+
+#tacboard {
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+#tacboard tr td {
+    width: 130px;
+    height: 130px;
+    border: 3px solid #000000;
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+}
+#tacboard tr td:hover {
+    background: #C2C2C2;
+    cursor: pointer;
+}
+UL#cTurn {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+UL#cTurn LI {
+    display: inline;
+}
+UL#cTurn LI A {
+    padding: 3px 5px;
+    background-color: #000000;
+    color: #FDFDFD;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+UL#cTurn LI A.turnPlayer{
+    background-color: #393939;
+    color: #61C9A8;
+    padding: 8px 5px;
+}
+.tacAgain {
+    background-color: #000000;
+    border: none;
+    color: #FDFDFD;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.tacAgain:hover {
+    padding: 20px;
+    background-color: black;
+    color: #ED9B40;
+}
+#ticToTac {
+
+}
+#ticToTac:hover{
+
+}
+.column {
+    float: left;
+    width: 48%;
+    padding: 6px;
+    max-width: 50%;
+    align-self: center;
+}
+#row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cell{
+    display: inline-block;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border: 1px solid #ED9B40;
+    margin: 5px;
+    font-size: 90px;
+    padding-top: 7px;
+    cursor: pointer;
+}
+.cell:hover {
+    background-color: #000000;
+    color: #FDFDFD;
+    border: 1px solid #FDFDFD;
+}
+#playBulls {
+    text-align: center;
+}
+#bull12{
+    font-size: 84px;
+}
+#bull10 {
+    font-size: 84px;
+}
+.myline {
+    display: inline;
+    font-size: 90px;
+    font-weight: bold;
+}
+#playerguess{
+    margin: 0 auto;
+    border: 1px solid #000000;
+    min-height: 110px;
+    max-width: 350px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#howBullsCows {
+    font-size: 34px;
+}
+#youneedtogo {
+    font-size: 16px;
+    font-style: italic;
+    color: darkred;
+}
+.gameSelect{
+    border: solid #61C9A8;
+    padding: 15px;
+}
+.gameSelect:hover{
+    border: solid #BD0600;
+    background-color: #BD0600;
+    cursor: pointer;
+}

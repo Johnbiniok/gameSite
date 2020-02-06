@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/game.css" rel="stylesheet" media="all">
+    <link href="fontasticsymbols/styles.css" rel="stylesheet" media="all">
+</head>
+<body>
+<header>
+    <h1 id="title" class="center">Game-a-palooza</h1>
+</header>
+<div class="wrap">
+    <div class="tabNav">
+        <ul class="navigation">
+            <li><a href="tabs.html#home">Homepage</a></li>
+            <li><a href="tabs.html#tictac">Tic-Tac-Toe</a></li>
+            <li><a href="tabs.html#bullscows">Bulls and Cows</a></li>
+        </ul>
+        <div id="home">
+            <h2 class="center">Game Center</h2>
+            <h3>Welcome to the game center! click on the game you would like to play below to load it!!!</h3>
+            <div id="row">
+                <div class="column">
+                    <h2>Instructions</h2>
+                    <p>Tic-tac-toe or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.</p>
+                    <img src="images/TicTacToe.png" height="514" width="509" class="gameSelect" id="ticToTac"/>
+                </div>
+                <div class="column">
+                    <h2>Rules</h2>
+                    <ul>
+                        <li>If the player's guess matches the secret number, they win. The program should display the total number of guesses that were made.</li>
+                        <li>If the player's guess contains a digit that matches one of the digits in the secret number and is in the same position, that is considered one "bull".</li>
+                        <li>If the player's guess contains a digit that matches one of the digits in the secret number but is not in the same position, that is considered one "cow".</li>
+                    </ul>
+                    <img src="images/BullsAndCows.png"  id="bullsNCows" height="600" class="gameSelect" width="510"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="tictac">
+
+            <h2 class="center">Tic-Tac-Toe</h2>
+            <div id="gamepiece" class="center">
+            <h3>Choose what you would like to be:</h3>
+                <label for="xPiece">Choose X</label>
+                <input type="radio" name="piece" id="xPiece" value="X">
+                <label for="oPiece">Choose O</label>
+                <input type="radio" name="piece" id="oPiece" value="O">
+            </div>
+            <ul class="center" id="cTurn">
+                <li class="tturn"><a id="tUser" class="turnPlayer">User Turn</a></li>
+                <li class="tturn"><a id="cUser">Computer Turn</a></li>
+            </ul>
+            <table id="tacboard">
+                <tr id="toptac">
+                    <td id="t01"><div id="r1"></div></td>
+                    <td id="t02"><div id="r2"></div></td>
+                    <td id="t03"><div id="r3"></div></td>
+                </tr>
+                <tr id="midtac">
+                    <td id="t04"><div id="r4"></div></td>
+                    <td id="t05"><div id="r5"></div></td>
+                    <td id="t06"><div id="r6"></div></td>
+                </tr>
+                <tr id="bottac">
+                    <td id="t07"><div id="r7"></div></td>
+                    <td id="t08"><div id="r8"></div></td>
+                    <td id="t09"><div id="r9"></div></td>
+                </tr>
+
+            </table>
+            <div id="tacwhoWins"><p id="tacDisplayWin"></p></div>
+            <div id="displayOnWin" class="center">
+                <button class="tacAgain" id="tacToo">Play Again!</button>
+            </div>
+        </div>
+        <div id="bullscows">
+            <h2 class="center">Bulls and Cows</h2>
+            <div class="center"><div id="howBullsCows"></div></div>
+            <div class="center"><button class="tacAgain" id="playBull">Play Bulls and Cows</button></div>
+        <div class="center" id="playerguess"><div id="oneNum" class="myline"></div><div id="twoNum" class="myline"></div><div id="threeNum" class="myline"></div><div id="fourNum" class="myline"></div></div>
+            <div class="center" id="youneedtogo"></div>
+            <div id="playBulls">
+                <div id="replaceWithNumpad" class="replaced"></div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="js/tictactoe.js"></script>
+    <script src="js/bullsandcows.js"></script>
+</footer>
+</body>
+</html>
